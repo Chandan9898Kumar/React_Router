@@ -18,7 +18,6 @@
 
 	// Previously called time of the function
 	let prev = 0;
-    console.log(prev,"orevvvvvvvvvvvvvvvvvvvvv")
 	return (...args) => {
    
 		// Current called time of the function
@@ -26,16 +25,10 @@
 
 		// Logging the difference between previously
 		// called and current called timings
-		console.log(now,"now       >>>>>>>>>");
-		console.log(prev,"prev        >>>>>>>>>");
-
-		
 		// If difference is greater than delay call
 		// the function again.
 		if(now - prev> delay){
 		prev = now;
-        console.log(prev,"now assigned to prev >>>>>>>>>>>>>>>>>>>>")
-
 		// "..." is the spread operator here
 		// returning the function with the
 		// array of arguments
