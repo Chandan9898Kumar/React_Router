@@ -7,12 +7,12 @@ const MyMulti = ({ MyMul, number }) => {
 
     return (
         <>
-            <h1>This is my Multiplication  Page</h1>
+            <h1>This is my Multiplication  Page  :</h1>
             My Number : {number} <br />
 
             <button
-                type='submit'
-                onClick={MyMul}
+            type='submit'
+            onClick={MyMul}
             >Mutliply</button>
             <br /><br />
             To Go Back Click below <br />
