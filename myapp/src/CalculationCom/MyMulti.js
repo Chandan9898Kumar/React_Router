@@ -3,14 +3,11 @@ import Enhance from '../MainCom/MainFunction'
 import { useNavigate } from "react-router-dom";
 
 const MyMulti = ({ MyMul, number }) => {
-
     const Navigate = useNavigate()
 
     return (
         <>
             <h1>This is my Multiplication  Page</h1>
-
-
             My Number : {number} <br />
 
             <button
@@ -25,17 +22,7 @@ const MyMulti = ({ MyMul, number }) => {
                 onClick={() => Navigate(-1)}
             >Go Back</button>
 
-
-
-
         </>
-
-
-
-
-
-
-
     )
 }
 
