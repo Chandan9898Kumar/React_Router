@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+<title>
+	JavaScript | With Throttling
+</title>
+</head>
+<body>
+<button id="throttle">Click Me</button>
+<script>
+	const btn=document.querySelector("#throttle");
+	
+	// Throttling Function
+	const throttleFunction=(func, delay)=>{
+
+	// Previously called time of the function
+	let prev = 0;
+    console.log(prev,"orevvvvvvvvvvvvvvvvvvvvv")
+	return (...args) => {
+   
+		// Current called time of the function
+		let now = new Date().getTime();
+
+		// Logging the difference between previously
+		// called and current called timings
+		console.log(now,"now       >>>>>>>>>");
+		console.log(prev,"prev        >>>>>>>>>");
+
+		
+		// If difference is greater than delay call
+		// the function again.
+		if(now - prev> delay){
+		prev = now;
+        console.log(prev,"now assigned to prev >>>>>>>>>>>>>>>>>>>>")
+
+		// "..." is the spread operator here
+		// returning the function with the
+		// array of arguments
+		return func(...args);
+		}
+	}
+	}
+	btn.addEventListener("click", throttleFunction(()=>{
+	console.log("button is clicked")
+	}, 1500));
+</script>
+</body>
+</html>
