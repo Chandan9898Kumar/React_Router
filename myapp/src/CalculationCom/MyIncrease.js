@@ -31,25 +31,9 @@ onClick={()=> Navigate('/MyMulti')}
 >Click</button>
 
 
-
-
-
-
-
-
-
-
-
-
 </>
 
-
-
-
 )
-
-
-
 
 }
 export default Enhance(Increase);

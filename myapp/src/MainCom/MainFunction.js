@@ -12,9 +12,6 @@ const Enhance = (OriginalFunction) => {
         const MyMulti = () => {
             setNumber(number => (number+1) * 2)
         }
-
-
-
         return (
 
             <>
@@ -27,19 +24,8 @@ const Enhance = (OriginalFunction) => {
 
                 />
 
-
-
-
-
-
             </>
         )
-
-
-
-
-
-
 
     }
     return Main;
